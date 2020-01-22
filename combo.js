@@ -15,6 +15,8 @@ const evenOdd = aNumber => {
 console.log(evenOdd(4));
 console.log(evenOdd(7));
 
+// Challenge 1 in class solution is same as my solution
+
 // Challenge #2
 // given a number, find its opposite. 2 = -2
 const oppositesGame = anyNum => {
@@ -22,6 +24,9 @@ const oppositesGame = anyNum => {
 }
 console.log(oppositesGame(4));
 console.log(oppositesGame(-6));
+
+// Challenge 2 in class solution is the same as my solution
+
 
 // Challenge #3
 // A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
@@ -44,6 +49,25 @@ console.log(palindrome('Murder for a jar of red rum.'));
 console.log(palindrome('not a palindrome'));
 console.log(palindrome('Taco. cat'))
 
+// Challenge 3 in class solution --- you also have to get rid of all the punctuation still. You can use a replace, but the code above is easier.
+// there is another way to do it as a pure function that you can find on freecodecamp
+const palindrome1 = text => {
+    const cleanText = text.toLowerCase().replace(' ', '');
+    const opp = cleanText.toLowerCase().split('').reverse().join('');
+    if (cleanText = opp) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+console.log(palindrome1('mom'));
+console.log(palindrome1('racecar'));
+console.log(palindrome1('cat'));
+console.log(palindrome1('bear'));
+
 // Challenge #4
 // Lawrence the wide mouth frog is particularly interested in the eating habits of other creatures.
 // He just can't stop asking the creatures he encounters what they like to eat. But then he meet the alligator who just LOVES to eat the lips of wide-mouthed frogs!
@@ -62,3 +86,13 @@ console.log(animalSize('boar'));
 console.log(animalSize('Alligator'));
 console.log(animalSize('Sheep'));
 console.log(animalSize('alligator'))
+
+// Challenge 4 in class solution 
+const animal = str => {
+    if (str.toLowerCase() === 'alligator') {
+        return small;
+    }
+    else {
+        return PerfWidgetExternal;
+    }
+}
